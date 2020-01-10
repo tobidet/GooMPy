@@ -56,7 +56,7 @@ def _pixels_to_degrees(pixels, zoom):
 
 def _grab_tile(lat, lon, zoom, maptype, _TILESIZE, sleeptime):
 
-    urlbase = 'https://maps.googleapis.com/maps/api/staticmap?center=%f,%f&zoom=%d&maptype=%s&size=%dx%d&format=jpg'
+    urlbase = 'https://maps.googleapis.com/maps/api/staticmap?center=%f,%f&zoom=%d&maptype=%s&size=%dx%d&format=jpg&key='
     urlbase += _KEY
 
     specs = lat, lon, zoom, maptype, _TILESIZE, _TILESIZE
